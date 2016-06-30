@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.net.URLEncoder;
 
@@ -78,7 +79,8 @@ public class BookDetailsActivity extends AppCompatActivity
 
     public void onClickDownloadButton(View v)
     {
-        startActivity(Utils.openWebBrowser(m_book.getDownloadUrl()));
+        Toast.makeText(BookDetailsActivity.this, "chrome", Toast.LENGTH_SHORT).show();
+        Utils.openChromeCustomTab(this , m_book.getDownloadUrl());
     }
 
 
@@ -86,7 +88,7 @@ public class BookDetailsActivity extends AppCompatActivity
     {
         //http://www.it-ebooks.info/search/?q=9780987153081&type=isbn
         String url = String.format("http://www.it-ebooks.info/search/?q=%s&type=isbn" , m_book.getIsbnNumber());
-        startActivity(Utils.openWebBrowser(url));
+        Utils.openChromeCustomTab(this , url);
     }
 
 
@@ -96,7 +98,7 @@ public class BookDetailsActivity extends AppCompatActivity
         {
           //http://www.it-ebooks.info/search/?q=Kevin+Yank&type=author
             String url = String.format("http://www.it-ebooks.info/search/?q=%s&type=isbn", URLEncoder.encode(m_book.getAuthor(), "UTF-8"));
-            startActivity(Utils.openWebBrowser(url));
+            Utils.openChromeCustomTab(this , url);
         }
         catch (Exception ex)
         {

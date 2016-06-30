@@ -5,7 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.Uri;
+import android.support.customtabs.CustomTabsIntent;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -136,6 +138,24 @@ public class Utils
         return new Intent(Intent.ACTION_VIEW , Uri.parse(url));
     }
 
+    public static void openChromeCustomTab(Activity activity , String url)
+    {
+        if (!url.startsWith("http://") && !url.startsWith("https://"))
+            url = "http://" + url;
+
+        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+
+        CustomTabsIntent customTabsIntent = builder
+                .setToolbarColor(Color.parseColor("#303f9f"))
+                .setShowTitle(true)
+                .build();
+
+        customTabsIntent.launchUrl(activity , Uri.parse(url));
+
+    }
+
+
+
 
     public static void hideKeyboard(Activity activity)
     {
@@ -145,6 +165,8 @@ public class Utils
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
+
+
 }
 
 
