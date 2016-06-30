@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BookSLibraryApp</string>
+    <string name="MAINACTIVITY_BUTTON_SEARCH_TEXT">Ara</string>
+    <string name="MAINACTIVITY_EDITTEXT_SEARCHTEXT_FROMANY">Giriş Yapınız</string>
+    <string name="MAINACTIVITY_EDITTEXT_SEARCHTEXT_FROMAUTHOR">Yazarı Giriniz</string>
+    <string name="MAINACTIVITY_EDITTEXT_SEARCHTEXT_FROMISBN">ISBN Kodunu Giriniz</string>
+    <string name="MAINACTIVITY_EDITTEXT_SEARCHTEXT_FROMTITLE">Kitap Adını Giriniz</string>
+    <string name="action_settings">Ayarlar</string>
+</resources>

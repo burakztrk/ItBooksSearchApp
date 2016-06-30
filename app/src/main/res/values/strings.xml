@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IT-eBooks Search</string>
+    <string name="bookdetaits_title">Book Details</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="MAINACTIVITY_BUTTON_SEARCH_TEXT">Search</string>
+    <string name="MAINACTIVITY_EDITTEXT_SEARCHTEXT_FROMANY">Type Hire...</string>
+    <string name="MAINACTIVITY_EDITTEXT_SEARCHTEXT_FROMTITLE">Type Title...</string>
+    <string name="MAINACTIVITY_EDITTEXT_SEARCHTEXT_FROMAUTHOR">Type Author...</string>
+    <string name="MAINACTIVITY_EDITTEXT_SEARCHTEXT_FROMISBN">Type ISBN Code...</string>
+</resources>
