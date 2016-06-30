@@ -66,12 +66,12 @@ public class BookDetailsActivity extends AppCompatActivity
 
     private void gatherViews()
     {
-        m_textView_title    = (TextView) findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_TITLE);
-        m_textView_author   = (TextView) findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_AUTHOR);
-        m_textView_desc     = (TextView) findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_DESC);
-        m_textView_isbn     = (TextView) findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_ISBN);
-        m_textView_page     = (TextView) findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_PAGE);
-        m_textView_year     = (TextView) findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_YEAR);
+        m_textView_title    = (TextView) this.findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_TITLE);
+        m_textView_author   = (TextView) this.findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_AUTHOR);
+        m_textView_desc     = (TextView) this.findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_DESC);
+        m_textView_isbn     = (TextView) this.findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_ISBN);
+        m_textView_page     = (TextView) this.findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_PAGE);
+        m_textView_year     = (TextView) this.findViewById(R.id.BOOKDETAILSACTIVITY_TEXTVIEW_YEAR);
         m_imageView_img     = (ImageView)this.findViewById(R.id.BOOKDETAILSACTIVITY_IMAGEVIEW_IMG);
     }
 
