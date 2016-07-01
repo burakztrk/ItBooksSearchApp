@@ -14,7 +14,8 @@ Captcha kodundan dolayı kitabın download işlemi browsera yönlendirilir.
 Browser Chrome CustomTabs kullanıldı.
 
 Api örnek sorgu sonucu
-```http://it-ebooks-api.info/v1/search/aa```
+
+``` http://it-ebooks-api.info/v1/search/aa ```
 
 ```json
 {
@@ -36,7 +37,7 @@ Api örnek sorgu sonucu
 ```
 
 Api örnek kitap sorgusu sonucu
-```http://it-ebooks-api.info/v1/book/2279690981```
+``` http://it-ebooks-api.info/v1/book/2279690981 ```
 ```json
 {
   "Error": "0",
