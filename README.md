@@ -13,8 +13,7 @@ Bu sayfada Kitap adı , Yazar Adı ve ISBN kodu seçilebilir durumdadır ve bunl
 Captcha kodundan dolayı kitabın download işlemi browsera yönlendirilir.
 Browser Chrome CustomTabs kullanıldı.
 
-Api örnek sorgu sonucu
-
+Api Örnek Arama Sorgusu Sonucu:
 ``` http://it-ebooks-api.info/v1/search/aa ```
 
 ```json
@@ -36,8 +35,9 @@ Api örnek sorgu sonucu
 }
 ```
 
-Api örnek kitap sorgusu sonucu
+Api Örnek Kitap Sorgusu Sonucu
 ``` http://it-ebooks-api.info/v1/book/2279690981 ```
+
 ```json
 {
   "Error": "0",
