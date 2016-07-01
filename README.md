@@ -12,6 +12,7 @@ In this tutorial, we'll make an app that searches the [it-ebooks.info](http://it
 
 ##SEARCH EKRANI
 Search ekranında arama kriterine göre arama yapılır ve ilk 10 sonuç listelenir.
+
 ![](/img/search.png)![](/img/search_isbn.png)
 
 ##BOOKDETAILS EKRANI
@@ -23,6 +24,7 @@ Bu sayfada Kitap adı , Yazar Adı ve ISBN kodu seçilebilir durumdadır ve bunl
 ##DOWNLOAD AUTHOR VE SITE BUTONLARI
 Captcha kodundan dolayı kitabın download işlemi browsera yönlendirilir.
 Browser olarak Chrome CustomTabs kullanıldı.
+
 ![](/img/author_books.png)![](/img/downloadScreen.png)
 
 
