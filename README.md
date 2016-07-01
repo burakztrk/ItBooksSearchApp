@@ -2,6 +2,7 @@
 
 ##IT Books Search App
 In this tutorial, we'll make an app that searches the [it-ebooks.info](http://it-ebooks.info/) to search books and display cover images.
+
 [it-ebooks-api.info](it-ebooks-api.info) Api's using and search books authors isbn code and download books
 
 
@@ -28,7 +29,7 @@ Browser Chrome CustomTabs kullanıldı.
   "Books": [
     {
       "ID": 1311713395,
-      "Title": "Asset Accounting Configuration in SAP ERP",
+        "Title": "Asset Accounting Configuration in SAP ERP",
       "SubTitle": "A Step-by-Step Guide",
       "Description": "In this book, noted expert Andrew Okungbowa explains SAP Asset Accounting (FI-AA) in SAP-ERP, including its associated business benefits, and guides you through the considerable complexities of SAP-ERP configuration. Using FI-AA for fixed asset manag ...",
       "Image": "http://s.it-ebooks-api.info/6/asset_accounting_configuration_in_sap_erp.jpg",
@@ -78,8 +79,16 @@ Browser olarak Chrome CustomTabs kullanıldı.
 ![](/img/author_books.png)![](/img/downloadScreen.png)
 
 ##HttpUrlBuilder sınıfı
-HttpUrlBuilder sınıfı genel bir sınıf olarak yazıldı.Fakat ```it-ebooks.info``` apisine uyumlu hale getirmek için
-build metodunda parametreler için yazılacak ```URLEncoder.encode(urlStr , "UTF-8");``` ile tekrar genel bir sınıf haline getirilebilir.
+HttpUrlBuilder sınıfı genel bir sınıf olarak yazıldı.Fakat ```it-ebooks.info``` apisine uyumlu hale getirmek için genel kalıptan çıkarıldı.
+Build metodunda parametreler için yazılacak ```URLEncoder.encode(paramsStr , "UTF-8");``` ile tekrar genel bir sınıf haline getirilebilir.
+Fluent tasarım kalıbıyla yazıldı.
+```java
+String url = (new HttpUrlBuilder("http://...")
+ .setAssignmentOperator('=')
+ .setSeparationOperator('/')
+ .setParameter(new String[]{"word" , "door"}))
+ .build();
+```
 
 ```java
 package com.ozturkburak.itbookssearchapp;
