@@ -35,7 +35,7 @@ Browser Chrome CustomTabs kullanıldı.
 }
 ```
 
-### Örnek Kitap Detayları Sonucu
+###Örnek Kitap Detayları Sonucu
 ``` http://it-ebooks-api.info/v1/book/2279690981 ```
 
 ```json
