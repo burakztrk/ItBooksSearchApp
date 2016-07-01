@@ -19,7 +19,7 @@ Browser Chrome CustomTabs kullanıldı.
 ###Örnek Arama Sorgusu Sonucu:
 ``` http://it-ebooks-api.info/v1/search/aa ```
 
-```json
+```JSON
 {
   "Error": "0",
   "Time": 0.0067,
@@ -41,7 +41,7 @@ Browser Chrome CustomTabs kullanıldı.
 ###Örnek Kitap Detayları Sonucu
 ``` http://it-ebooks-api.info/v1/book/2279690981 ```
 
-```json
+```JSON
 {
   "Error": "0",
   "Time": 0.00106,
@@ -258,33 +258,12 @@ Utils sınıfında çoğu projede işe yarayacak metodlar mevcut ve kullanılabi
 * ``` getJsonDatafromUrl ``` Metodu Api üzerinden Json datasını String olarak döndürür.
 * ``` openHttpConnection ``` Metodu HttpURLConnection işlemlerini içeride yapar ve HttpURLConnection döndürür.
 * ``` readInputStream ``` Streami chunk chunk okuyarak String döndürür.
-* ``` downloadImagefromUrl ``` Verilen url`den Bitmap döndürür. AsyncTaskta kullanıldığı için ayrı Thread yaratılmadı.
+* ``` downloadImagefromUrl ``` Verilen url`den Bitmap döndürür. AsyncTask ile kullanıldığı için ayrı Thread yaratılmadı.
 * ``` openWebBrowser ``` Verilen url`i browserda açmak için Intent'i geri döndürür.
 * ``` openChromeCustomTab ``` Verilen url`i Chrome CustomTab ile açar.Chrome yüklü olmaması durumunda Default Browser kullanılır.
 * ``` hideKeyboard ``` Search işleminden sonra listeleme işlemi için Soft Keyboard gizlendi.
 
 ```java
-package com.ozturkburak.itbookssearchapp;
-
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.net.Uri;
-import android.support.customtabs.CustomTabsIntent;
-import android.util.Log;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 /**
  * Created by burak on 28.06.2016.
@@ -434,5 +413,5 @@ public class Utils
         }
     }
     
-}```
+} ```
 
