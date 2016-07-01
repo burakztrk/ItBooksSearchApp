@@ -8,10 +8,10 @@ In this tutorial, we'll make an app that searches the [it-ebooks.info](http://it
 [it-ebooks-api.info](it-ebooks-api.info) üzerinden programlama kitaplarını isime , yazara , isbn koduna göre aramanızı ve indirmenizi sağlar.
 
 Search ekranında arama kriterine göre arama yapılır ve ilk 10 sonuç listelenir.
-Listede seçilen uygulamaya ait kitap koduyla yeni bir sorgu yapılır ve bookdetails sayfasında gösterilir.
+Listede seçilen uygulamaya ait kitap koduyla yeni bir sorgu yapılır ve ```bookdetails``` sayfasında gösterilir.
 Bu sayfada Kitap adı , Yazar Adı ve ISBN kodu seçilebilir durumdadır ve bunlarla ilgili de arama oluşturulabilir.
 Captcha kodundan dolayı kitabın download işlemi browsera yönlendirilir.
-Browser olarak Chrome CustomTabs kullanıldı.
+Browser Chrome CustomTabs kullanıldı.
 
 
 ![](img/out10-300.gif)
