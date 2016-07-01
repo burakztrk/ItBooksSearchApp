@@ -2,10 +2,10 @@
 
 ##IT Books Search App
 In this tutorial, we'll make an app that searches the [it-ebooks.info](http://it-ebooks.info/) to search books and display cover images.
-
 [it-ebooks-api.info](it-ebooks-api.info) Api's using and search books authors isbn code and download books
 
-[it-ebooks-api.info](it-ebooks-api.info) üzerinden programlama kitaplarını isime , yazara , isbn koduna göre aramanızı ve indirmenizi sağlar.
+
+[it-ebooks-api.info](it-ebooks-api.info) Api'siyle üzerinden programlama kitaplarını isime , yazara , isbn koduna göre aramanızı ve indirmenizi sağlar.
 
 Search ekranında arama kriterine göre arama yapılır ve ilk 10 sonuç listelenir.
 Listede seçilen uygulamaya ait kitap koduyla yeni bir sorgu yapılır ve ```bookdetails``` sayfasında gösterilir.
@@ -13,6 +13,47 @@ Bu sayfada Kitap adı , Yazar Adı ve ISBN kodu seçilebilir durumdadır ve bunl
 Captcha kodundan dolayı kitabın download işlemi browsera yönlendirilir.
 Browser Chrome CustomTabs kullanıldı.
 
+Api örnek sorgu sonucu
+```http://it-ebooks-api.info/v1/search/aa```
+
+```json
+{
+  "Error": "0",
+  "Time": 0.0067,
+  "Total": "1",
+  "Page": 1,
+  "Books": [
+    {
+      "ID": 1311713395,
+      "Title": "Asset Accounting Configuration in SAP ERP",
+      "SubTitle": "A Step-by-Step Guide",
+      "Description": "In this book, noted expert Andrew Okungbowa explains SAP Asset Accounting (FI-AA) in SAP-ERP, including its associated business benefits, and guides you through the considerable complexities of SAP-ERP configuration. Using FI-AA for fixed asset manag ...",
+      "Image": "http://s.it-ebooks-api.info/6/asset_accounting_configuration_in_sap_erp.jpg",
+      "isbn": "9781484213667"
+    }
+  ]
+}
+```
+
+Api örnek kitap sorgusu sonucu
+```http://it-ebooks-api.info/v1/book/2279690981```
+```json
+{
+  "Error": "0",
+  "Time": 0.00106,
+  "ID": 2279690981,
+  "Title": "PHP & MySQL: The Missing Manual",
+  "SubTitle": "",
+  "Description": "If you can build websites with CSS and JavaScript, this book takes you to the next level-creating dynamic, database-driven websites with PHP and MySQL. Learn how to build a database, manage your content, and interact with users through queries and web forms. With step-by-step tutorials, real-world examples, and jargon-free explanations, youu2019ll soon discover the power of server-side programming.",
+  "Author": "Brett McLaughlin",
+  "ISBN": "9780596515867",
+  "Year": "2011",
+  "Page": "498",
+  "Publisher": "O'Reilly Media",
+  "Image": "http://s.it-ebooks-api.info/3/php__mysql_the_missing_manual.jpg",
+  "Download": "http://filepi.com/i/qqkNNW2"
+}
+```
 
 ![](img/out10-300.gif)
 
