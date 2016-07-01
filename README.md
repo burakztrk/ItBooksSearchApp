@@ -13,6 +13,8 @@ Bu sayfada Kitap adı , Yazar Adı ve ISBN kodu seçilebilir durumdadır ve bunl
 Captcha kodundan dolayı kitabın download işlemi browsera yönlendirilir.
 Browser Chrome CustomTabs kullanıldı.
 
+Arama işleminde çekilen tüm kitap bilgileri geçici olarak tutulur.Eğer kayıt edilen kitap tekrar aranırsa bu bilgiler kullanılır.Bu bilgiler localde veritabanına da kayıt edilebilir.
+
 ![](img/out10-300.gif)
 
 
