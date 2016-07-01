@@ -28,12 +28,12 @@ public class Utils
     public static String getJsonDatafromUrl(String urlStr) throws Exception
     {
         String result;
-
+        HttpURLConnection connection = null;
         try
         {
-            HttpURLConnection connection = openHttpConnection(urlStr);
+            connection = openHttpConnection(urlStr);
 
-            result = readInputSream(connection.getInputStream());
+            result = readInputStream(connection.getInputStream());
             connection.disconnect();
 
         }
@@ -41,6 +41,9 @@ public class Utils
         {
             Log.d("Exception" , ex.getMessage());
             throw ex;
+        }finally
+        {
+            connection.disconnect();
         }
 
         return result;
@@ -70,7 +73,7 @@ public class Utils
     }
 
 
-    private static String readInputSream(InputStream is)throws Exception
+    private static String readInputStream(InputStream is)throws Exception
     {
         StringBuilder result = new StringBuilder();
         try
@@ -165,7 +168,6 @@ public class Utils
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
-
 
 }
 

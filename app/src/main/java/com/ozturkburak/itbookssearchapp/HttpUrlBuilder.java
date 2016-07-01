@@ -2,6 +2,7 @@ package com.ozturkburak.itbookssearchapp;
 
 import android.webkit.URLUtil;
 
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -147,7 +148,6 @@ public class HttpUrlBuilder
         int listSize = m_paramList.size();
         for (int i = 0; i < listSize ; i++)
         {
-
             result.append(String.format("%s%s%s",m_paramList.get(i)[0]
                     , m_assignmentOperator
                     , m_paramList.get(i)[1].replace(" " ,"%20")  ));
