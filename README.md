@@ -1,6 +1,7 @@
-#BOOK SEARCH TUTORIAL 
 
-##IT Books Search App
+# BOOK SEARCH TUTORIAL 
+
+## IT Books Search App
 In this tutorial, we'll make an app that searches the [it-ebooks.info](http://it-ebooks.info/) to search books and display cover images.
 
 [it-ebooks-api.info](it-ebooks-api.info) Api's using and search books authors isbn code and download books
@@ -18,7 +19,7 @@ Arama işleminde çekilen tüm kitap bilgileri geçici olarak tutulur.Eğer kay�
 ![](img/out10-300.gif)
 
 
-###Örnek Arama Sorgusu Sonucu:
+### Örnek Arama Sorgusu Sonucu:
 ``` http://it-ebooks-api.info/v1/search/aa ```
 
 ```JSON
@@ -40,7 +41,7 @@ Arama işleminde çekilen tüm kitap bilgileri geçici olarak tutulur.Eğer kay�
 }
 ```
 
-###Örnek Kitap Detayları Sonucu
+### Örnek Kitap Detayları Sonucu
 ``` http://it-ebooks-api.info/v1/book/2279690981 ```
 
 ```JSON
@@ -62,24 +63,24 @@ Arama işleminde çekilen tüm kitap bilgileri geçici olarak tutulur.Eğer kay�
 ```
 
 
-##SEARCH EKRANI
+## SEARCH EKRANI
 Search ekranında arama kriterine göre arama yapılır ve ilk 10 sonuç listelenir.
 
 ![](/img/search.png)![](/img/search_isbn.png)
 
-##BOOKDETAILS EKRANI
+## BOOKDETAILS EKRANI
 Listede seçilen uygulamaya ait kitap koduyla yeni bir sorgu yapılır ve bookdetails sayfasında gösterilir.
 Bu sayfada Kitap adı , Yazar Adı ve ISBN kodu seçilebilir durumdadır ve bunlarla ilgili de arama oluşturulabilir.
 
 ![](/img/book_details00.png)![](/img/book_details01.png)![](/img/book_details02.png)
 
-##DOWNLOAD AUTHOR VE SITE BUTONLARI
+## DOWNLOAD AUTHOR VE SITE BUTONLARI
 Captcha kodundan dolayı kitabın download işlemi browsera yönlendirilir.
 Browser olarak Chrome CustomTabs kullanıldı.
 
 ![](/img/author_books.png)![](/img/downloadScreen.png)
 
-##HttpUrlBuilder sınıfı
+## HttpUrlBuilder sınıfı
 HttpUrlBuilder sınıfı genel bir sınıf olarak yazıldı.Fakat ```it-ebooks.info``` apisine uyumlu hale getirmek için genel kalıptan çıkarıldı.
 Build metodunda parametreler için yazılacak ```URLEncoder.encode(paramsStr , "UTF-8");``` ile tekrar genel bir sınıf haline getirilebilir.
 Fluent tasarım kalıbıyla yazıldı.
@@ -262,7 +263,7 @@ public class HttpUrlBuilder
 }
 ```
 
-###UTILS SINIFI
+### UTILS SINIFI
 Utils sınıfında çoğu projede işe yarayacak metodlar mevcut ve kullanılabilir durumda.
 
 * ``` getJsonDatafromUrl ``` Metodu Api üzerinden Json datasını String olarak döndürür.
